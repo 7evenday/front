@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style.css" rel="stylesheet">
+	<link href="stylePopUp.css" rel="stylesheet">
+	<link href="stylebtnAdd.css" rel="stylesheet">
+	<link href="stylebtnRemove.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<div class="header">
+		<label class="btn" for="modal-1">Создать пользователя</label>
+	</div><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+				<form method="post" action="">
+						<table class="headline" width="83%">
+								<tr>
+										<th scope="col" width="10%">ID</th>
+										<th scope="col" width="95%">ФИО</th>
+										<th scope="col" width="20%">Баланс</th>
+								</tr>
+								<table id="dynamic" width="92%" border="1" cellspacing="0" cellpadding="5">
+									<tr>
+										<td>sdfsdfs</td>
+										<td>sdfsdfs</td>
+										<td>sdfsdfs</td>
+										<td><label>Подробнее</label></td>
+										<td><label>Одолжить</label></td>
+									</tr>								
+								</table>
+						</table>
+						</form>
+				<div class="modal">
+					<input class="modal-open" id="modal-1" type="checkbox" hidden>
+					<div class="modal-wrap" aria-hidden="true" role="dialog">
+					  <label class="modal-overlay" for="modal-1"></label>
+					  <div class="modal-dialog">
+						<div class="modal-header">
+								<form class="figure" id="add-user">
+										<h2>Заполните поля</h2> 
+										  <fieldset>
+											<label class="fieldset">ФИО: <input type="text" class="fieldset" name="name"></label><br>
+											<label class="fieldset">Сумма: <input type="text" class="fieldset" name="balance"></label><br>
+										  </fieldset>
+											<button class="button" type="submit">Создать</button>
+									  </form>
+							<label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+							
+						</div>
+					  </div>
+					</div>
+					</div>
+					
+					<div class="modal">
+						<input class="modal-open" id="modal-2" type="checkbox" hidden>
+						<div class="modal-wrap" aria-hidden="true" role="dialog">
+							<label class="modal-overlay" for="modal-2"></label>
+							<div class="modal-dialog">
+							<div class="modal-header">
+									<figure class="figure">
+											<h2>Пополение баланса</h2> 
+												<fieldset>
+													<label>Сумма:<br><input type="text" name="balance" value= "Введите сумму…">
+												</fieldset>
+												<button class="button" type="submit">Пополнить</button>
+											</figure>
+								<label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+							</div>
+							</div>
+						</div>
+						</div>
+
+						<div class="modal">
+							<input class="modal-open" id="modal-3" type="checkbox" hidden>
+							<div class="modal-wrap" aria-hidden="true" role="dialog">
+								<label class="modal-overlay" for="modal-3"></label>
+								<div class="modal-dialog">
+								<div class="modal-header">
+										<figure class="figure">
+												<h2>Списание средств</h2> 
+													<fieldset>
+														<label>Сумма:<br><input type="text" name="balance" value= "Введите сумму…">
+													</fieldset>
+													<button class="button" type="submit">Списать</button>
+												</figure>
+									<label class="btn-close" for="modal-3" aria-hidden="true">×</label>
+								</div>
+								</div>
+							</div>
+							</div>
+
+							<div class="modal">
+								<input class="modal-open" id="modal-4" type="checkbox" hidden>
+								<div class="modal-wrap" aria-hidden="true" role="dialog">
+									<label class="modal-overlay" for="modal-4"></label>
+									<div class="modal-dialog">
+									<div class="modal-header">
+											<figure class="figure">
+													<h2>Данные пользователя</h2> 
+													<div class="one-user">
+														<div class="one-user_result" id="one-user"></div>
+													</div>
+													</figure>
+										<label class="btn-close" for="modal-4" aria-hidden="true">×</label>
+									</div>
+									</div>
+								</div>
+								</div>
+							
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="left-sidebar">
+
+						<div id="okno">
+							<fieldset>
+							 <table>
+							   <thead>  
+							   <tr><th colspan="1">Мои данные</th></tr>
+							   </thead>
+							   <tr><td>ID: </td><td>Ghbdtn</td></tr>
+							   <tr><td>ФИО: </td><td> fghjkl, fghjkl;lkjhg</td></tr>
+							   <tr><td>Баланс: </td><td>3256</td></tr>
+							   <tr><td>Долг:</td><td>7586</td></tr>
+							 </table>
+							</fieldset>
+						</div>
+
+						<label class="btnAdd" for="modal-2">Пополнить баланс</label>
+						<label class="btnRemove" for="modal-3">Списать средства</label>
+
+		</aside><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<div class="footer">
+	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+</div><!-- .footer -->
+<script src="/js/utils.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
