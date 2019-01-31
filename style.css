@@ -150,3 +150,7 @@ body {
 		background: oldlace;
 		text-align: center;
 	}
+
+	.buttons{
+		margin-top: 3px;
+	}

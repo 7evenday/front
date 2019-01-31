@@ -51,7 +51,8 @@
 										<h2>Заполните поля</h2> 
 										  <fieldset>
 											<label class="fieldset">ФИО: <input type="text" class="fieldset" name="name"></label><br>
-											<label class="fieldset">Сумма: <input type="text" class="fieldset" name="balance"></label><br>
+											<label class="fieldset">Сумма: <input type="text" class="fieldset" name="balance"></label>
+											<label class="fieldset" name="debt" value="0"></label>
 										  </fieldset>
 											<button class="button" type="submit">Создать</button>
 									  </form>
@@ -68,13 +69,17 @@
 							<label class="modal-overlay" for="modal-2"></label>
 							<div class="modal-dialog">
 							<div class="modal-header">
-									<figure class="figure">
+								<div class="add-cash">
+									<form class="figure" id="add-cash">
+									<figure>
 											<h2>Пополение баланса</h2> 
 												<fieldset>
-													<label>Сумма:<br><input type="text" name="balance" value= "Введите сумму…">
+													<label>Сумма:<br><input type="text" name="balance" id="balance">
 												</fieldset>
 												<button class="button" type="submit">Пополнить</button>
 											</figure>
+											</form>
+										</div>
 								<label class="btn-close" for="modal-2" aria-hidden="true">×</label>
 							</div>
 							</div>
@@ -108,8 +113,8 @@
 									<div class="modal-header">
 											<figure class="figure">
 													<h2>Данные пользователя</h2> 
-													<div class="one-user">
-														<div class="one-user_result" id="one-user"></div>
+													<div class="add-cash">
+														<div class="add-cash_result" id="one-cash"></div>
 													</div>
 													</figure>
 										<label class="btn-close" for="modal-4" aria-hidden="true">×</label>
@@ -124,22 +129,26 @@
 		<aside class="left-sidebar">
 
 						<div id="okno">
+							<form id="okno">
 							<fieldset>
 							 <table>
 							   <thead>  
 							   <tr><th colspan="1">Мои данные</th></tr>
-							   </thead>
-							   <tr><td>ID: </td><td>Ghbdtn</td></tr>
-							   <tr><td>ФИО: </td><td> fghjkl, fghjkl;lkjhg</td></tr>
-							   <tr><td>Баланс: </td><td>3256</td></tr>
-							   <tr><td>Долг:</td><td>7586</td></tr>
+								 </thead>
+								 <table id="dynamic">
+							   <tr><td>ID: </td><td id="profId">Ghbdtn</td></tr>
+							   <tr><td>ФИО: </td><td id="profName"> fghjkl, fghjkl;lkjhg</td></tr>
+							   <tr><td>Баланс: </td><td id="profBalance">3256</td></tr>
+								 <tr><td>Долг:</td><td id="profDebt">7586</td></tr>
+								</table>
 							 </table>
 							</fieldset>
+						</form>
 						</div>
-
-						<label class="btnAdd" for="modal-2">Пополнить баланс</label>
-						<label class="btnRemove" for="modal-3">Списать средства</label>
-
+						<div class="buttons">
+							<label class="btnAdd" for="modal-2">Пополнить баланс</label>
+							<label class="btnRemove" for="modal-3">Списать средства</label>
+						</div>
 		</aside><!-- .left-sidebar -->
 
 	</div><!-- .middle-->
